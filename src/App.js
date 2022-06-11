@@ -1,5 +1,7 @@
+import React from 'react';
 import './App.css';
-import Dashboard from '../Dashboard/Dashboard';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+// import Dashboard from '../Dashboard/Dashboard';
 
 function App() {
   return (
@@ -8,11 +10,11 @@ function App() {
       <BrowserRouter>
         <Switch>
           <Route path="/dashboard">
-            <Dashboard />
+            {/* <Dashboard /> */}
           </Route>
-          <Route path="/preferences">
+          {/* <Route path="/preferences">
             <Preferences />
-          </Route>
+          </Route> */}
         </Switch>
       </BrowserRouter>
     </div>
