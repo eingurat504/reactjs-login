@@ -1,23 +1,13 @@
 import React from 'react';
 import './App.css';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
-// import Dashboard from '../Dashboard/Dashboard';
+import Login from './Auth/Login';
+// https://contactmentor.com/login-form-react-js-code/
 
 function App() {
   return (
-    <div className="App">
-      <h1>Application</h1>
-      <BrowserRouter>
-        <Switch>
-          <Route path="/dashboard">
-            {/* <Dashboard /> */}
-          </Route>
-          {/* <Route path="/preferences">
-            <Preferences />
-          </Route> */}
-        </Switch>
-      </BrowserRouter>
-    </div>
+    <main className="App">
+       <Login />
+    </main>
   );
 }
 
