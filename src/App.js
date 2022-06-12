@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './App.css';
 import Login from './Auth/Login';
 // https://contactmentor.com/login-form-react-js-code/
