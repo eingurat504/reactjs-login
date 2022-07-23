@@ -1,12 +1,13 @@
+const client = require('./config/config.js');
 const express = require('express');
 const app = express();
 
-const apiRouter = require('./routes/api');
+const apiRouter = require('../routes/api');
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-const models = require("./models");
+const models = require("../models");
 
 app.use('/api', apiRouter);
 
