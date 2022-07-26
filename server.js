@@ -9,7 +9,7 @@ app.use(express.json());
 
 const models = require("./api/models");
 
-// app.use('/api', apiRouter);
+app.use('/api', apiRouter);
 
 models.sequelize.sync().then(function(){
     console.log('Nice database looks fine');
