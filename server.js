@@ -1,13 +1,13 @@
-const client = require('./config/config.js');
+const client = require('./api/config/config.js');
 const express = require('express');
 const app = express();
 
-const apiRouter = require('../routes/api');
+const apiRouter = require('./api/routes/api');
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-const models = require("../models");
+const models = require("./api/models");
 
 app.use('/api', apiRouter);
 
@@ -21,6 +21,6 @@ app.listen(5000, function(){
     console.log('TASK MANAGEMENT API');
 });
 
-client.connect();
+// client.connect();
 
 module.exports = app;
